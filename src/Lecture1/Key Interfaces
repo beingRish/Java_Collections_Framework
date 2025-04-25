@@ -1,0 +1,46 @@
+Key Interfaces in the Collection Framework:
+
+The collection Framework is primarily built around a set of interfaces.
+important ones are:
+
+Collection: The root interface for all the other collection types.
+List: An ordered collection that can contain duplicate elements(e.g., ArrayList, LinkedList).
+Set: A collection that cannot contain duplicate elements(e.g., HashSet, TreeSet).
+Queue: A collection designed for holding elements prior to processing(e.g., PriorityQueue, LinkedList when used as a queue).
+Deque: A double-ended queue that allows insertion and removal from both ends(e.g., ArrayDeque).
+Map: An interface that represents a collection of key-value pairs(e.g., HashMap, TreeMap).
+
+Collection Hierarchy: The Collection Framework is organized into a hierarchy where the core interfaces are at the top,
+    and the specific implementations extend these interfaces.
+
+                                               Iterable
+                                                  |
+                                              Collection
+                                                  |
+          _________________________________________________________________________________________
+         |                                        |                                                |
+         List                                    Set                                               Queue
+         |                                        |                                                |
+    ArrayList                                  HashSet                                           LinkedList
+   LinkedList                               LinkedHashSet                                       PriorityQueue          |ArrayDeque
+     Vector                                    TreeSet                                             DeQue ------------->|LinkedList
+   Stack                                       EnumSet                                          BlockingQueue          |ConcurrentLinkedDeque
+CopyOnWriteArrayList                      ConcurrentSkipListSet                              ArrayBlockingQueue
+                                              SortedSet                                      LinkedBlockingQueue
+                                           CopyOnWriteArraySet                              PriorityBlockingQueue
+                                                                                              SynchronousQueue
+                                                                                                 DelayQueue
+                                                                                            ConcurrentLinkedQueue
+
+Collection Interface:
+The Collection interface is the root interface of thee Java Collection Framework.
+It is the most basic interface that defines a group of objects known as elements.
+The Collection interface is a part of the java.util package, and It is a parent
+interface that is extended by other collection interfaces like List, Set, and Queue.
+
+Since Collection is an interface, it cannot be instantiated directly; rather it
+provides a blueprint for the basic operations that are common to all collections.
+
+The Collection interface defines a set of core methods that are implemented by all
+classes that implement the interface. These methods allow for basic operations
+such as adding, removing, and checking thee existench of elements in a collection.
