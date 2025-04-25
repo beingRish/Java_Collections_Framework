@@ -1,0 +1,10 @@
+
+The List interface in Java is a part of the java.util package and is a sub-interface of the Collection interface.
+It provides a way to stroe an ordered collection of elements(known as a sequence).
+List allow for precise control over where elements are inserted and con contain duplicate elemeents.
+The List interface is implemented by several classees in the Java Collection Framework, such as ArrayList, LinkedList, Vector, and Stack.
+
+Key Feature of the List Interface:
+-> Order Preservation
+-> Index-Based Access
+-> Allows Duplicates
