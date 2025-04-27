@@ -1,0 +1,33 @@
+
+                                        How Data is Stored in HashMap
+                                        _____________________________
+Step 1: Hashing the Key ->
+First, the key is passed through a hash function to generate a unique hash code (an integer number).
+This hash code helps determine where the key-value pair will be stored in the array (called a "bucket array").
+
+Step 2: Calculating the index ->
+The hash code is then used to calculate an index in the array (bucket location) using
+                        int index = hashCode % arraySize;
+The index decides which bucket will hold this key-value pair.
+For example, if the array size is 16, the key's hash code will be divided by 16, and the remainder will be the index.
+
+Step 3: Storing in the Bucket ->
+The key-value pair is stored in the bucket at the calculated index. Each bucket can hold multiple key-value pairs.
+(this is called a collision handling mechanism, discussed later).
+
+map.put("apple", 50);
+-> "apple" is the key.
+-> 50 is the value.
+-> The hash code of "apple" is calculated.
+-> The index is found using the hash code.
+-> The pair ("apple", 50) is stored in the corresponding bucket.
+
+
+                                        How HashMap Retrieves Data
+                                        __________________________
+When we call get(key), the HashMap follows these steps:
+
+Hashing the Key: Similar to insertion, the key is hashed using the same hash function to calculated its hash code.
+Finding the index: The hash code is used to find the index of the buckeet where the key-value pair is stored.
+Searching in the Bucket: Once the correct bucket is found, it checks for the key in that bucket.
+                         if it finds the key, it returns the associated value.

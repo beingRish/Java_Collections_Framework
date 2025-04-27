@@ -1,0 +1,35 @@
+                                Handling Collisions
+                                ___________________
+Since different keys can generate the same index (called a collision), HashMap uses a technique to handle this situation.
+Java's HashMap uses Linked Lists (or balanced trees after Java 8) for this.
+If multiple key-value pairs map to the same bucket, they are stored in a linked list inside the bucket.
+When a key-value pair is retrieved, the HashMap traverses the linked list. checking each key until it finds a match.
+
+                map.put("apple", 50);
+                map.put("banana", 30);
+                map.put("orange", 80);
+Let's say "apple" and "orange" end up in the same bucket due to a hash collision.
+They will be stored in a linked list in that cucket:
+Bucket 5: ("apple", 50) -> ("orange", 80)
+
+When we do map.get("orange"), HashMap will go to Bucket 5 and theen traverse the linked list to find the entry with the key "orange".
+
+                                HashMap Resizing (Rehashing)
+HashMap has an internal array size, which by default is 16.
+When the number of elements (key-value pairs) grows and exceeds a certain load factor (default is 0.75),
+HashMap automatically resizes the array to hold more data. This process is called rehashing.
+The default size of the array is 16, so when more than 12 elements(16*0.75) are inserted, the HashMap will resize.
+
+                                During Rehashing
+The array size is doubled.
+1. All existing entries are rehashed(i.e., their positions are recalculated) and placed into the new array.
+2. This ensurees the HashMap continues to perform efficiently even as more data is added.
+
+
+                                Time Complexity
+HashMap provides constant time O(1) performance for basic operations like put() and get() (assuming no collisions).
+However, if there are many collisions, and many entries are storeed in the same bucket,
+the performance can degrade to O(n), where n is the number of elements in that bucket.
+
+But after Java 8, if there are too many elements in a bucket,
+HashMap switches to balanced tree instead of a linked list to ensure better performance O(log n).
