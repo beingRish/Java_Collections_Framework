@@ -43,11 +43,11 @@ Key Characteristics of Hash Function:
 -> Efficient Computation: The hash function should compute the hash quickly.
 
 
-                                              Map (Separate Interface)
-                                                  |
-          ______________________________________________________________________________________________________________
-         |                                                      |                                                       |
-----------------------------                                    SortedMap                                          ConcurrentMap
+                                                                                      Map (Separate Interface)
+                                                                                          |
+          ______________________________________________________________________________________________________________________________________________________
+         |                                                      |                                                       |                                       |
+----------------------------                                    SortedMap                                          ConcurrentMap                             EnumMap
 |                           |                                      |                                                    |
 HashMap                     Hashtable                           TreeMap                                         ConcurrentHashMap
 |                           (legacy)                            NavigableMap                                  ConcurrentSkipListMap

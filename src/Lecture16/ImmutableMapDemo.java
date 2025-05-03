@@ -14,6 +14,6 @@ public class ImmutableMapDemo {
 //        map2.put("C", 3);
         Map<String, Integer> map3 = Map.of("Shubham", 98, "Vivek", 89);
         map3.put("Akshit", 88);
-        Map<String, Integer> map4 = Map.ofEntries(Map.entry("Akshit", 99), Map.entry("Vivek", 99));
+        Map.ofEntries(Map.entry("Akshit", 99), Map.entry("Vivek", 99));
     }
 }
