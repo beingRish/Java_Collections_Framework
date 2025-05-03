@@ -1,0 +1,4 @@
+Set is a collection that cannot contain duplicate elements
+faster operations
+Map --> HashMap, LinkedHashMap, TreeMap, EnumMap
+Set --> HashSet, LinkedHashSet, TreeSet, EnumSet
