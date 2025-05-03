@@ -1,0 +1,9 @@
+Queue:-
+A data structure that works on the FIFO(First-In-First-Out) principle
+Queue is a interface in Java
+
+Elements are added at the end and removed from the front.
+-> enqueue: add at end : add() or offer() method
+-> dequeue: remove head: remove() or poll() method
+-> peek: head: peek() or element() method
+

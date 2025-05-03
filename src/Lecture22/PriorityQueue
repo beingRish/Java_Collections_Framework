@@ -1,0 +1,7 @@
+part of the Queue interfacee
+orders elements based on their natural ordering (for primitives lowest first)
+custom comparator for customised ordering
+does not allow null elements
+
+                                // Internal Working
+PriorityQueue is implemented as a min-heap by default (for natural ordering)

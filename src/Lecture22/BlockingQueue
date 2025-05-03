@@ -1,0 +1,10 @@
+threead-safe queue
+wait for queue to become non-empty / wait for space
+simplify concurrency problems like producer-consumer
+standard queue --> immediately
+    empty --> remove ( no waiting )
+    full --> add ( no waiting )
+Blocking queue
+    put --> Blocks if the queue is full until space becomes available
+    take --> Blocks if the queue is empty until an element becomes available
+    offer --> Waits for space to become available, up to the specified timeout

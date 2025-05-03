@@ -1,0 +1,2 @@
+ConcurrentLinkedQueue:
+An implementation of the Queue interface that supports lock-free, thread-safe operations.
