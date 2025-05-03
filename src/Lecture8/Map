@@ -41,3 +41,17 @@ Key Characteristics of Hash Function:
 -> Deterministic: The same input will always produce the same output.
 -> Fixed Output Size: Regardless of the input size, the hash code has a consistent size (e.g., 32-bit, 64-bit).
 -> Efficient Computation: The hash function should compute the hash quickly.
+
+
+                                              Map (Separate Interface)
+                                                  |
+          ______________________________________________________________________________________________________________
+         |                                                      |                                                       |
+----------------------------                                    SortedMap                                          ConcurrentMap
+|                           |                                      |                                                    |
+HashMap                     Hashtable                           TreeMap                                         ConcurrentHashMap
+|                           (legacy)                            NavigableMap                                  ConcurrentSkipListMap
+LinkedHashMap
+WeakHashMap
+IdentityHashMap
+
