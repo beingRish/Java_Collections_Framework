@@ -1,0 +1,6 @@
+HashTable is synchronized
+no null key or value
+Legacy Class, ConcurrentHashMap
+Slower than HashMap
+Only linked list in case of collision
+All methods are synchronized
