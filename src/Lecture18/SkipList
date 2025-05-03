@@ -1,0 +1,3 @@
+SkipList:
+Probabilistic data structure that allows for efficient search insertions, and deletion operations.
+It is similar to a sorted linked list but with multiple layers that "skip" over partions of the list to provide faster access to elements.
