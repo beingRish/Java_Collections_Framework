@@ -6,15 +6,25 @@ Improve Readability and Maintainability
 Enable Easy Parallelism
 
 What is stream?
-A sequence of elements supporting functional and declarative programming
+    A sequence of elements supporting functional and declarative programming
 
 How to Use Streams?
-Source, intermediate operations & terminal operation
+    Source, intermediate operations & terminal operation
 
 Creating Streams
-1. From collections
-2. From Arrays
-3. Using Stream.of()
-4. Infinite Streams
-    i) Stream.generate()
-    ii) Stream.iterate()
+    1. From collections
+    2. From Arrays
+    3. Using Stream.of()
+    4. Infinite Streams
+        i) Stream.generate()
+        ii) Stream.iterate()
+
+Intermediate Operations:
+    Intermediate operations transform a stream into another stream
+    They are lazy, meaning they don't execute until a terminal operation is invoked.
+    1. filter
+    2. map
+    3. sorted
+    4. distinct
+    5. limit
+    6. skip
