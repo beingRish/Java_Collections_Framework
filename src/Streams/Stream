@@ -49,3 +49,7 @@ Parallel Stream:
     workload is distributed across multiple threads
     Parallel stream are most effective for CUP-intensive or large datasets where tasks are independent
     They may add overhead for simple tasks or small datasets
+
+Collectors:
+Collectors is a utility class
+provides a set of methods to creae common collectors
