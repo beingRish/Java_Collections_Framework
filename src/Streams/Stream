@@ -28,6 +28,8 @@ Intermediate Operations:
     4. distinct
     5. limit
     6. skip
+    7. peek
+    8. flatMap
 
 Terminal Operations:
     1. collect or toList
@@ -36,6 +38,9 @@ Terminal Operations:
     4. count
     5. anyMatch, allMatch, nonMatch
     6. findFirst, findAny
+    7. toArray
+    8. min / max
+    9. forEachOrdered
 
 Parallel Stream:
     A type of stream that enables parallel processing of elements
