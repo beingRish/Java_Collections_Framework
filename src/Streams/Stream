@@ -36,3 +36,11 @@ Terminal Operations:
     4. count
     5. anyMatch, allMatch, nonMatch
     6. findFirst, findAny
+
+Parallel Stream:
+    A type of stream that enables parallel processing of elements
+    Allowing multiple threads to process parts of the stream simultaneously
+    This can significantly improve performance for large data sets
+    workload is distributed across multiple threads
+    Parallel stream are most effective for CUP-intensive or large datasets where tasks are independent
+    They may add overhead for simple tasks or small datasets
