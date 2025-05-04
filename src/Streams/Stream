@@ -28,3 +28,11 @@ Intermediate Operations:
     4. distinct
     5. limit
     6. skip
+
+Terminal Operations:
+    1. collect or toList
+    2. forEach
+    3. reduce: Combines elements to produce a single result
+    4. count
+    5. anyMatch, allMatch, nonMatch
+    6. findFirst, findAny
